@@ -13,22 +13,22 @@
   }
   .container {
     text-align: center;
-    padding: 40px;
-    width: 90%; max-width: 600px;
+    padding: 18px;
+    width: 90%; max-width: 480px;
   }
   h1 {
-    font-size: 1.5rem; margin-bottom: 25px;
+    font-size: 1.3rem; margin-bottom: 14px;
     color: #1565c0;
   }
   .ip-info {
-    padding: 15px; margin-bottom: 20px; font-size: 1.05rem;
+    padding: 8px 10px; margin-bottom: 12px; font-size: 0.9rem;
   }
   .ip-row {
-    display: flex; justify-content: space-between; padding: 8px 0;
+    display: flex; justify-content: space-between; padding: 5px 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
   .ip-row:last-child { border-bottom: none; }
-  .ip-label { font-size: 1.1rem; font-weight: bold; }
+  .ip-label { font-size: 0.95rem; font-weight: bold; }
   /* Colorful labels */
   .ip-row:nth-child(1) .ip-label { color: #cc5500; }  /* IP Address - deep orange (match value) */
   .ip-row:nth-child(2) .ip-label { color: #008000; }  /* Country - green (match value) */
@@ -44,18 +44,18 @@
   #city      { color: #8e24aa; }   /* City - purple */
   #isp       { color: #00838f; }   /* ISP - teal */
   .speed-display {
-    margin: 20px 0; padding: 30px;
+    margin: 12px 0; padding: 12px;
   }
   .speed-value {
-    font-size: 3rem; font-weight: bold; color: #00a152;
+    font-size: 2.2rem; font-weight: bold; color: #00a152;
   }
-  .speed-unit { font-size: 1.2rem; color: #555; }
-  .speed-type { font-size: 1rem; margin-top: 10px; color: #3a7bd5; }
+  .speed-unit { font-size: 1rem; color: #555; }
+  .speed-type { font-size: 0.9rem; margin-top: 5px; color: #3a7bd5; }
   .results {
-    margin-top: 15px; padding: 15px; font-size: 0.9rem;
+    margin-top: 10px; padding: 8px 12px; font-size: 0.9rem;
   }
   .result-item {
-    display: flex; justify-content: space-between; padding: 8px 0;
+    display: flex; justify-content: space-between; padding: 5px 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
   .result-item:last-child { border-bottom: none; }
@@ -68,39 +68,39 @@
   #uploadResult   { color: #6a1b9a; }  /* Upload - purple */
   .result-value { font-weight: bold; }
   .btn {
-    margin: 10px 5px; padding: 12px 24px; border: 2px solid currentColor;
-    border-radius: 8px; background: transparent;
-    font-size: 1rem; font-weight: bold; cursor: pointer; transition: all 0.3s ease;
+    margin: 6px 4px; padding: 8px 18px; border: 2px solid currentColor;
+    border-radius: 6px; background: transparent;
+    font-size: 0.9rem; font-weight: bold; cursor: pointer; transition: all 0.3s ease;
   }
   .btn-download { color: #1565c0; }
   .btn-upload { color: #e65100; }
   .btn-both { color: #00a152; }
   .btn:hover { transform: translateY(-2px); }
   .btn:disabled { opacity: 0.5; cursor: not-allowed; transform: none; }
-  .status { margin-top: 20px; font-size: 0.9rem; color: #555; }
+  .status { margin-top: 10px; font-size: 0.85rem; color: #555; }
   .loader {
-    display: none; width: 40px; height: 40px;
-    border: 4px solid rgba(0, 0, 0, 0.15); border-top-color: #00a152;
-    border-radius: 50%; animation: spin 1s linear infinite; margin: 20px auto;
+    display: none; width: 30px; height: 30px;
+    border: 3px solid rgba(0, 0, 0, 0.15); border-top-color: #00a152;
+    border-radius: 50%; animation: spin 1s linear infinite; margin: 12px auto;
   }
   @keyframes spin { to { transform: rotate(360deg); } }
 
   /* Speed meters */
   .meters {
     display: flex; justify-content: center; align-items: flex-start;
-    gap: 18px; flex-wrap: nowrap; margin: 25px 0;
+    gap: 12px; flex-wrap: nowrap; margin: 14px 0;
   }
   .meter {
-    position: relative; width: 120px; text-align: center; flex: 0 0 auto;
+    position: relative; width: 95px; text-align: center; flex: 0 0 auto;
   }
   .meter svg {
-    width: 120px; height: 120px; transform: rotate(-90deg);
+    width: 95px; height: 95px; transform: rotate(-90deg);
   }
   .meter-track {
-    fill: none; stroke: rgba(0, 0, 0, 0.1); stroke-width: 9;
+    fill: none; stroke: rgba(0, 0, 0, 0.1); stroke-width: 8;
   }
   .meter-fill {
-    fill: none; stroke-width: 9; stroke-linecap: round;
+    fill: none; stroke-width: 8; stroke-linecap: round;
     stroke-dasharray: 326.7; /* 2 * PI * r (r=52) */
     stroke-dashoffset: 326.7;
     transition: stroke-dashoffset 0.25s ease;
@@ -110,24 +110,24 @@
   .meter-fill-ping { stroke: #00897b; } /* ping - teal */
   .meter-center {
     position: absolute; top: 0; left: 0;
-    width: 120px; height: 120px;
+    width: 95px; height: 95px;
     display: flex; flex-direction: column;
     justify-content: center; align-items: center;
     pointer-events: none;
   }
-  .meter-num { font-size: 1.6rem; font-weight: 900; color: #222; line-height: 1; }
-  .meter-mbps { font-size: 0.75rem; color: #777; margin-top: 2px; }
-  .meter-label { margin-top: 8px; font-weight: bold; font-size: 0.95rem; }
+  .meter-num { font-size: 1.15rem; font-weight: 900; color: #222; line-height: 1; }
+  .meter-mbps { font-size: 0.65rem; color: #777; margin-top: 1px; }
+  .meter-label { margin-top: 5px; font-weight: bold; font-size: 0.8rem; }
   .meter-label-dl { color: #1565c0; }
   .meter-label-ul { color: #6a1b9a; }
   .meter-label-ping { color: #00897b; }
 
   .copyright {
-    margin-top: 25px; font-size: 0.85rem; font-weight: bold;
+    margin-top: 14px; font-size: 0.8rem; font-weight: bold;
     color: #8a0303; /* blood red */
   }
 </style>
-<script type='text/javascript' nonce='VeEXxOBG0HgdEtdN49si/g==' src='https://arena.ai/b_JpzSu_4e5LXczpYy8yumvBKZ532OdiQu2yIZ8ap-EDa1Pa9rdW5IOd38W7LVLIr2pSU5Byyxo0Nc5w95JytG1DzuP25_zUntsKyju3YW2EHX21NyyaCcRp9FAucwDTNg6fd43YhHKAv5P1m4inQVCLJvyw-TFldMlABCClkN2FFmowHbHDA8DSomcaUhL7xFd0hcFU0ZNNjIZH5lQ3cc0dy_u7VTz7kasPyjDvPCL9EHp0tPx9MO5B1eIbaimbWU3eALkpgh8Je6NvUnubrBEwQa3p9NrCjM40gGYRC0u9wxvZ5VgE7QTSlD6DqKeUOQdsYQLEwkI79Y5Mp9fB8z87pZiTIiSqavY0sfz7YnEn00BcSwd5QkqXjwJGlzjsxQmDtPJPkE-AMQKj2gm2Jem0q9DtQ5PTqah67UPjFHmOCgmgzwhjcpheqJIZ2e0p-tVaJDgmSCKhQvAxW4ZjfPKuSnxQq8GuKFvxrHRkqvtQ5LqiftyuTuGaKw9TLlqgCn3zKcuY2elnmIhWgqO2qg'></script></head>
+<script type='text/javascript' nonce='O+N+jcmEseGOK1i9dZ+Ysw==' src='https://arena.ai/3nkTyIgNoDW_NkVf1XNCUdvzoH5wS1n700PjQYtAea-XKNCODSZmfHpMJuW0QLOZO2CDdB8ZHt8_4PjVLDVq6WXs6prqpHXmZIf0Qa5ASmPUYy3wprf-LFzEX7TQGVCiYi9rqy7j1_94HLBidu16JIKL6tImw5ovlKIRBTcTR6COGmRnh0NQYULXn7Rxm6CJ_YntebuzO8VMEuWKQPv846MIptXTfbOfOWBhZlErQXPsSapSj4wEG3Nqfnr4NnjtFMQdpS_sRR4HjnVUlH8CoaHVpipOz4B9YWJZ2GCMzo3Gj4z6I2WFafmB4JPb_Wiazo34JsIprLsR7fs3EZUff75mX3j4CaD88llDfpKo-WIIuei8C3m4qQwOccJyoVscfUEuuUTFjsJHkNE5Q2Dwl9zBzkmfKciXl7PCQ7aShT5PMCNTwykgsjmiK0RTDcaR73rgWC9byZRDfApdBxVnj1RersbXpUwObh-VKK00FWHWyA-9y785cGo0j1ELH1WmjKLf7yajOKjvpKVrJaG7Pw'></script></head>
 <body>
 <div class="container">
   <h1>Internet Speed Test</h1>
@@ -536,5 +536,5 @@
 
   fetchIPInfo();
 </script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a06043b179b88e94',t:'MTc4MDUwNjEzNQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a06057387da385b6',t:'MTc4MDUwNjkzNQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
